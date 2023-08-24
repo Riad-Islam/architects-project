@@ -1,12 +1,14 @@
 /* Set Font family */
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-*{
-    font-family: 'Work Sans', sans-serif;
-    margin: 0px;
-    padding: 0px;
+* {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
-.btn-primary{
+
+/* Shared style */
+.btn-primary {
   border-radius: 8px;
   background-color: #FF900E;
   color: #FFF;
@@ -17,58 +19,67 @@
   border: 0;
 }
 
-/* Header style */
-header{
-  background: rgba(255, 144, 14, 0.10);
-  padding: 50px 240px;
-}
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-title{
+.section-title {
   font-size: 2.8rem;
   font-weight: 700;
   color: #131313;
 }
-nav > ul{
+
+/* Header style */
+header {
+  background: rgba(255, 144, 14, 0.10);
+  padding: 50px 240px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav>ul {
   display: flex;
 }
-nav li{
+
+nav li {
   list-style: none;
   margin-right: 30px;
   font-size: 18px;
-  font-weight: 500; 
+  font-weight: 500;
 }
-nav li a{
+
+nav li a {
   text-decoration: none;
   color: #424242;
 }
 
 /* Banner style */
-.banner{
+.banner {
   margin-top: 70px;
 }
-.banner-content{
+
+.banner-content {
   max-width: 800px;
   text-align: center;
   margin: 0px auto;
 }
-.banner-title{
+
+.banner-title {
   font-size: 4rem;
   font-weight: 700px;
   color: #131313;
   margin-bottom: 5px;
   padding: 10px;
 }
-.banner-description{
+
+.banner-description {
   font-size: 1rem;
   font-weight: 400px;
   color: #727272;
   margin-bottom: 32px;
 }
-.banner img{
+
+.banner img {
   width: 100%;
   margin-top: 50px;
 }
@@ -76,78 +87,129 @@ nav li a{
 
 /* Style for main section */
 
-main{
+main {
   max-width: 1440px;
   margin: 70px auto;
 }
-.team-container{
+
+.team-container {
   display: flex;
   align-items: center;
 }
-.team-img-container{
+
+.team-img-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-left: 50px;
 }
-.team-content{
+
+.team-content {
   padding-left: 70px;
   padding-right: 70px;
 }
-.team-title{
+
+.team-title {
   font-size: 2.8rem;
   margin-bottom: 24px;
 }
-.team-description{
+
+.team-description {
   margin-bottom: 32px;
+  color: #727272;
 }
-.team-title .quick-list{
+
+.team-title .quick-list {
   color: #727272;
   font-weight: 500;
 }
-.team-title .text-feature{
+
+.team-title .text-feature {
   color: #FF900E;
   font-weight: 700;
 }
+
+/* Style for fact section */
+.fact-description {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  width: 542px;
+}
+
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #FF900E;
+  text-align: center;
+  padding: 30px;
+}
+
+.facts-card-container .card-stats {
+  color: #424242;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.facts-card-container .card-title {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 
 /* Responsive style */
 
 /* Mobile Device */
 @media screen and (max-width:576px) {
-  header{
+  header {
     padding: 20px;
   }
-nav, .team-container{
-  flex-direction: column;
-}
-.nav-title{
-  margin-bottom: 15px;
-}
-.btn-primary{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.team-img-container{
-  grid-template-columns: 1fr;
-  margin: 10px auto;
-}
-.team-content{
-  padding-left: 20px;
-  padding-right: 20px;
-}
-  
+
+  nav,
+  .team-container {
+    flex-direction: column;
+  }
+
+  .nav-title {
+    margin-bottom: 15px;
+  }
+
+  .btn-primary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .team-img-container {
+    grid-template-columns: 1fr;
+    margin: 10px auto;
+  }
+
+  .team-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 }
 
 /* Tablet or Mobile */
 @media screen and (min-width:576px) and (max-width:960px) {
-  header{
+  header {
     padding: 50px;
   }
-  .team-container{
+
+  .team-container {
     flex-direction: column;
   }
-  .team-img-container{
+
+  .team-img-container {
     margin: 10px auto;
   }
-  
+
 }
